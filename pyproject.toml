@@ -15,8 +15,11 @@ build-backend = "setuptools.build_meta"
 [project.scripts]
 temporal-mcp = "server:run"
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["temporal_mcp*"]
+
 [tool.setuptools]
-packages = ["temporal_mcp"]
 py-modules = ["server"]
 
 [tool.pytest.ini_options]
