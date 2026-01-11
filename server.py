@@ -31,5 +31,10 @@ async def main():
     await server.run()
 
 
-if __name__ == "__main__":
+def run():
+    """Synchronous entry point for CLI/uvx."""
     asyncio.run(main())
+
+
+if __name__ == "__main__":
+    run()
